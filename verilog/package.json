@@ -1,6 +1,6 @@
 {
-  "name": "@theia/verilog",
-  "version": "0.3.10",
+  "name": "theia-verilog",
+  "version": "0.3.11",
   "description": "Theia - Verilog Extension",
   "license": "Apache-2.0",
   "keywords": [
@@ -26,7 +26,8 @@
   "homepage": "https://github.com/theia-ide/theia-verilog-extension",
   "files": [
     "lib",
-    "src"
+    "src",
+    "data"
   ],
   "scripts": {
     "prepare": "yarn run clean && yarn run build",
