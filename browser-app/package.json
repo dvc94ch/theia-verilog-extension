@@ -1,0 +1,47 @@
+{
+  "private": true,
+  "name": "browser-app",
+  "version": "0.3.10",
+  "dependencies": {
+    "@theia/callhierarchy": "next",
+    "@theia/core": "next",
+    "@theia/editor": "next",
+    "@theia/editorconfig": "next",
+    "@theia/extension-manager": "next",
+    "@theia/file-search": "next",
+    "@theia/filesystem": "next",
+    "@theia/git": "next",
+    "@theia/keymaps": "next",
+    "@theia/languages": "next",
+    "@theia/markers": "next",
+    "@theia/merge-conflicts": "next",
+    "@theia/messages": "next",
+    "@theia/metrics": "next",
+    "@theia/mini-browser": "next",
+    "@theia/monaco": "next",
+    "@theia/navigator": "next",
+    "@theia/outline-view": "next",
+    "@theia/output": "next",
+    "@theia/preferences": "next",
+    "@theia/preview": "next",
+    "@theia/process": "next",
+    "@theia/verilog": "0.3.10",
+    "@theia/search-in-workspace": "next",
+    "@theia/task": "next",
+    "@theia/terminal": "next",
+    "@theia/userstorage": "next",
+    "@theia/variable-resolver": "next",
+    "@theia/workspace": "next"
+  },
+  "devDependencies": {
+    "@theia/cli": "next"
+  },
+  "scripts": {
+    "prepare": "theia build",
+    "start": "theia start",
+    "watch": "theia build --watch"
+  },
+  "theia": {
+    "target": "browser"
+  }
+}

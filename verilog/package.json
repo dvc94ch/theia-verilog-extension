@@ -1,0 +1,43 @@
+{
+  "name": "@theia/verilog",
+  "version": "0.3.10",
+  "description": "Theia - Verilog Extension",
+  "license": "Apache-2.0",
+  "keywords": [
+    "theia-extension"
+  ],
+  "dependencies": {
+    "@theia/core": "next",
+    "@theia/editor": "next",
+    "@theia/languages": "next",
+    "@theia/monaco": "next"
+  },
+  "devDependencies": {
+    "rimraf": "latest",
+    "typescript": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theia-ide/theia-verilog-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theia-ide/theia-verilog-extension/issues"
+  },
+  "homepage": "https://github.com/theia-ide/theia-verilog-extension",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "prepare": "yarn run clean && yarn run build",
+    "clean": "rimraf lib",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "theiaExtensions": [
+    {
+      "frontend": "lib/browser/verilog-frontend-module",
+      "backend": "lib/node/verilog-backend-module"
+    }
+  ]
+}
